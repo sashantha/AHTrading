@@ -11,26 +11,43 @@
 @import "~admin-lte/dist/css/adminlte.css";
 
 // FontAwesome
-$fa-font-path: "../webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
-.user {
-    @extend %fa-icon;
-    @extend .fas;
-
-    &:before {
-        content: fa-content($fa-var-user);
-    }
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.twitter {
-    @extend %fa-icon;
-    @extend .fab;
-
-    &:before {
-        content: fa-content($fa-var-twitter);
-    }
+.blue {
+    color: $blue;
+}
+.indigo {
+    color: $indigo;
+}
+.purple {
+    color: $purple;
+}
+.pink {
+    color: $pink;
+}
+.red {
+    color: $red;
+}
+.orange {
+    color: $orange;
+}
+.yellow {
+    color: $yellow;
+}
+.green {
+    color: $green;
+}
+.teal {
+    color: $teal;
+}
+.cyan {
+    color: $cyan;
 }
