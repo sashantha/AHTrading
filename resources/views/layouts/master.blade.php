@@ -204,7 +204,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <router-link to="/dashboard" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <i class="nav-icon fas fa-tachometer-alt blue"></i>
                                 <p>
                                     Dashboard
                                 </p>
@@ -212,7 +212,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li>
                         <li class="nav-item">
                             <router-link to="/branches" class="nav-link">
-                                <i class="nav-icon fas fa-building"></i>
+                                <i class="nav-icon fas fa-building green"></i>
                                 <p>
                                     Branches
                                 </p>
@@ -220,13 +220,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li>
                         <li class="nav-item">
                             <router-link to="/users" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                                <i class="nav-icon fas fa-users yellow"></i>
                                 <p>
                                     Users
                                 </p>
                             </router-link>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -248,6 +248,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                             </ul>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                          document.getElementById('logout-form').submit();">
+                                <i class="nav-icon fas fa-sign-out-alt red"></i>
+                                <p>
+                                    {{ __('Logout') }}
+                                </p>
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </nav>
@@ -288,7 +300,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 Anything you want
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            <strong>Copyright &copy; 2012-2021 <a
+                    href="https://www.climaxtechgroup.com/">Climaxtechgroup.inc</a>.</strong> All rights
             reserved.
         </footer>
     </div>
